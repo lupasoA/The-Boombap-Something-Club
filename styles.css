@@ -118,25 +118,23 @@ body {
   line-height: 1.45;
 }
 
-.inquiry-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 52px;
+.inquiry-contact {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
   margin-top: 44px;
-  padding: 0 28px;
-  border: 1px solid #fff;
   color: #fff;
-  font-size: 18px;
-  font-weight: 700;
   letter-spacing: 0;
-  text-decoration: none;
 }
 
-.inquiry-button:focus-visible,
-.inquiry-button:hover {
-  background: #fff;
-  color: #000;
+.inquiry-contact span:first-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.inquiry-contact span:last-child {
+  font-size: clamp(18px, 2vw, 28px);
+  line-height: 1.4;
 }
 
 @media (max-width: 700px) {
